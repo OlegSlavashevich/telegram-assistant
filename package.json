@@ -1,0 +1,33 @@
+{
+  "name": "telegram-gpt-bot",
+  "version": "1.0.0",
+  "description": "A Telegram bot for GPT-4o Mini interactions",
+  "main": "dist/bot.js",
+  "scripts": {
+    "start": "node dist/bot.js",
+    "build": "tsc",
+    "dev": "cross-env DEV_MODE=true nodemon --watch 'src/**/*.ts' --exec 'node --loader ts-node/esm' src/bot.ts"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "gpt",
+    "openrouter"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "mongodb": "^6.3.0",
+    "openai": "^4.0.0",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "type": "module"
+}
